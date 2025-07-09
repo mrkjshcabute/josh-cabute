@@ -20,10 +20,10 @@ const Home = () => {
         <div className='relative bg-hero w-full h-screen flex flex-col justify-between pb-16 overflow-x-hidden'>
             <Header />
 
-            <div className='flex flex-col justify-center items-center'>
-                <h2 className='text-[32px] text-[#1D1D1F] font-semibold'>FRONT-END DEVELOPER</h2>
-                <h1 className='text-[140px] leading-none mb-4 drop-shadow-xs'>JOSUAH</h1>
-                <p className='text-[16px] text-[#626262] font-medium'>Crafting sleek, responsive, and interactive web interfaces with clean, modern code.</p>
+            <div className='flex flex-col justify-center items-center text-center'>
+                <h2 className='text-[24px] md:text-[32px] text-[#1D1D1F] font-semibold'>FRONT-END DEVELOPER</h2>
+                <h1 className='text-[80px] md:text-[160px] lg:text-[200px] leading-none mb-4 drop-shadow-xs'>JOSUAH</h1>
+                <p className='text-[20px] md:text-[24px] text-wrap text-[#626262] font-medium mx-4 md:mx-20'>Crafting sleek, responsive, and interactive web interfaces with clean, modern code.</p>
             </div>
 
             <div className='flex justify-between items-end mx-12'>
@@ -51,8 +51,8 @@ const Home = () => {
 
         <img src={BlueCrop} className='w-full h-20 rotate-180 -mt-10'/>
 
-        <div className='bg-[#D5DEEF] grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center md:h-screen px-12 md:px-40'>
-            <div className='flex md:justify-end w-full'>
+        <div className='bg-[#D5DEEF] grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center md:h-screen py-16 pb-32 px-12 md:px-40'>
+            <div className='flex justify-center md:justify-end w-full'>
                 <div className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
                     <div className='flex justify-between items-center'>
                         <div className='flex items-center space-x-2'>
@@ -73,9 +73,9 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col space-y-8'>
+            <div className='flex flex-col space-y-4 md:space-y-8'>
                 <div>
-                    <h4 className='text-[24px] font-medium'>I'm Josuah</h4>
+                    <h4 className='text-[24px] font-medium'>I'm Josuah,</h4>
                     <h3 className='text-[32px] font-bold'>FRONT-END DEVELOPER</h3>
                 </div>
 
@@ -142,7 +142,7 @@ const Home = () => {
 
         <div className=''>
             <h2
-            className="text-center font-bold text-[120px] text-transparent"
+            className="text-center font-bold text-[72px] md:text-[120px] text-transparent leading-none py-8"
             style={{
                 WebkitTextStroke: '1px #395886',
             }}
@@ -150,12 +150,12 @@ const Home = () => {
                 FEATURED PROJECTS
             </h2>
 
-            <div className='text-center text-[#626262] text-[24px] mb-12'>
+            <div className='text-center text-[#626262] text-[20px] md:text-[24px] mb-12 text-wrap mx-4'>
                 <p>Clean, responsive, purposeful.</p>
                 <p>Explore the featured projects of the Joshboard.</p>
             </div>
 
-            <div className='grid grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
                 <div className='space-y-4'>
                     <div className='bg-[#B1C9EF] h-[60vh] flex flex-col justify-between px-4'>
                         <div></div>
