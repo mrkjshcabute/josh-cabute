@@ -22,26 +22,26 @@ const Home = () => {
 
             <div className='flex flex-col justify-center items-center'>
                 <h2 className='text-[32px] text-[#1D1D1F] font-semibold'>FRONT-END DEVELOPER</h2>
-                <h1 className='text-[140px] leading-none mb-4'>JOSUAH</h1>
+                <h1 className='text-[140px] leading-none mb-4 drop-shadow-xs'>JOSUAH</h1>
                 <p className='text-[16px] text-[#626262] font-medium'>Crafting sleek, responsive, and interactive web interfaces with clean, modern code.</p>
             </div>
 
             <div className='flex justify-between items-end mx-12'>
-                <button className='flex space-x-2 items-center border-1 border-[#8AAEE0] rounded-xl p-2 px-4 text-[#8AAEE0] hover:bg-[#8AAEE0] hover:text-white active:bg-[#8AAEE0] active:text-white'>
+                <button className='flex space-x-2 items-center border-1 border-[#8AAEE0] rounded-xl p-2 px-4 text-[#8AAEE0] hover:bg-[#8AAEE0] hover:text-white focus:bg-[#8AAEE0] focus:text-white'>
                     <p className='font-semibold'>DOWNLOAD CV</p>
                     <TbDownload size={20}/>
                 </button>
 
                 <div className='text-[#626262] font-semibold'>
-                    <a href='#' target='_blank' className='flex items-center transform -rotate-90 gap-2 absolute right-[1.5%] bottom-[14%]'>
+                    <a href='#' target='_blank' className='flex items-center transform -rotate-90 gap-2 absolute right-[1.5%] bottom-[14%] hover:text-[#395886] focus:text-[#395886]'>
                         <SlSocialFacebook className='leading-none'/>
                         <p className='leading-none'>FACEBOOK</p>
                     </a>
-                    <a href='#' target='_blank' className='flex items-center transform -rotate-90 gap-2 absolute right-[1.8%] bottom-[44%]'>
+                    <a href='#' target='_blank' className='flex items-center transform -rotate-90 gap-2 absolute right-[1.8%] bottom-[44%] hover:text-[#395886] focus:text-[#395886]'>
                         <LuLinkedin className='leading-none'/>
                         <p className='leading-none'>LINKEDIN</p>
                     </a>
-                    <a href='#' target='_blank' className='flex items-center transform -rotate-90 gap-2 absolute right-[2%] bottom-[70%]'>
+                    <a href='#' target='_blank' className='flex items-center transform -rotate-90 gap-2 absolute right-[2%] bottom-[70%] hover:text-[#395886] focus:text-[#395886]'>
                         <FiGithub className='leading-none'/>
                         <p className='leading-none'>GITHUB</p>
                     </a>
@@ -155,7 +155,7 @@ const Home = () => {
                 <p>Explore the featured projects of the Joshboard.</p>
             </div>
 
-            <div className='grid grid-cols-4 mx-12 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
                 <div className='space-y-4'>
                     <div className='bg-[#B1C9EF] h-[60vh] flex flex-col justify-between px-4'>
                         <div></div>
