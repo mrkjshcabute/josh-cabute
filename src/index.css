@@ -17,7 +17,7 @@ body{
   background-image: url('assets/bg/hero.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.4; /* Adjust background opacity */
+  opacity: 0.2; /* Adjust background opacity */
   z-index: -1;
 }
 

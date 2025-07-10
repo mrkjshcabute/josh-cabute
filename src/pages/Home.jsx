@@ -51,8 +51,8 @@ const Home = () => {
 
         <img src={BlueCrop} className='w-full h-20 rotate-180 -mt-10'/>
 
-        <div className='bg-[#D5DEEF] grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center md:h-screen py-16 pb-32 px-12 md:px-40'>
-            <div className='flex justify-center md:justify-end w-full'>
+        <div className='bg-[#D5DEEF] grid grid-cols-1 lg:grid-cols-2 gap-12 justify-center items-center md:h-screen py-16 pb-32 px-12 md:px-40'>
+            <div className='flex justify-center lg:justify-end w-full'>
                 <div className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
                     <div className='flex justify-between items-center'>
                         <div className='flex items-center space-x-2'>
@@ -64,7 +64,7 @@ const Home = () => {
                     <img src={JoshPf} className='w-72 h-68 object-cover' />
                     <div className='flex justify-between'>
                         <div className='flex space-x-2'>
-                            <Heart />
+                            <Heart fill='red' color='red'/>
                             <MessageCircle />
                             <Send />
                         </div>
@@ -144,7 +144,7 @@ const Home = () => {
             <h2
             className="text-center font-bold text-[72px] md:text-[120px] text-transparent leading-none py-8"
             style={{
-                WebkitTextStroke: '1px #395886',
+                WebkitTextStroke: '4px #395886',
             }}
             >
                 FEATURED PROJECTS
