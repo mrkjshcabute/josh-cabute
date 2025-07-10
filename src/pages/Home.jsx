@@ -13,8 +13,15 @@ import { SiPrimevue, SiQuasar } from "react-icons/si";
 import BlueCrop from "../assets/bg/Botton1.png"
 import WhiteCrop from "../assets/bg/Botton.png"
 import JoshPf from "../assets/img/josh-pf.png"
+import { projectData } from "../data/ProjectData.jsx"
 
 const Home = () => {
+    const bgColors = {
+        1: 'bg-[#B1C9EF]',
+        2: 'bg-[#8AAEE0]',
+        3: 'bg-[#638ECB]',
+        4: 'bg-[#395886]',
+    };
   return (
     <div className='overflow-x-hidden'>
         <div className='relative bg-hero w-full h-screen flex flex-col justify-between pb-16 overflow-x-hidden'>
@@ -51,7 +58,7 @@ const Home = () => {
 
         <img src={BlueCrop} className='w-full h-20 rotate-180 -mt-10'/>
 
-        <div className='bg-[#D5DEEF] grid grid-cols-1 lg:grid-cols-2 gap-12 justify-center items-center md:h-screen py-16 pb-32 px-12 md:px-40'>
+        <div className='bg-[#D5DEEF] grid grid-cols-1 lg:grid-cols-2 gap-12 justify-center items-center  py-16 pb-32 px-12 md:px-40'>
             <div className='flex justify-center lg:justify-end w-full'>
                 <div className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
                     <div className='flex justify-between items-center'>
@@ -155,50 +162,21 @@ const Home = () => {
                 <p>Explore the featured projects of the Joshboard.</p>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
-                <div className='space-y-4'>
-                    <div className='bg-[#B1C9EF] h-[60vh] flex flex-col justify-between px-4'>
-                        <div></div>
-                        <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none -mb-8'>1</h2>
+            <div className='grid grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
+                {projectData.slice(0,4).map((project) => (
+                    <div key={project.id} className='space-y-4'>
+                        <div className={`h-[40vh] md:h-[60vh] relative flex flex-col justify-between px-4 ${bgColors[project.id] || 'bg-[#CCCCCC]'}`}>
+                            <div className='flex justify-center mb-8'>
+                                <img src={project.featuredPhoto} className='w-[40vw] h-[20vh] md:h-[40vh]'/>
+                            </div>
+                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none absolute -bottom-8 right-2'>{project.id}</h2>
+                        </div>
+                        <div>
+                            <h2 className='text-[#1D1D1F] font-semibold text-[20px]'>{project.title}</h2>
+                            <p className='text-[#626262] text-[16px] font-medium'>{project.year}</p>
+                        </div>
                     </div>
-                    <div>
-                        <h2 className='text-[#1D1D1F] font-semibold text-[20px]'>Dental Care System</h2>
-                        <p className='text-[#626262] text-[16px] font-medium'>2023</p>
-                    </div>
-                </div>
-
-                <div className='space-y-4'>
-                    <div className='bg-[#8AAEE0] h-[60vh] flex flex-col justify-between px-4'>
-                        <div></div>
-                        <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none -mb-8'>2</h2>
-                    </div>
-                    <div>
-                        <h2 className='text-[#1D1D1F] font-semibold text-[20px]'>RDCHIME Inventory System</h2>
-                        <p className='text-[#626262] text-[16px] font-medium'>2024</p>
-                    </div>
-                </div>
-
-                <div className='space-y-4'>
-                    <div className='bg-[#638ECB] h-[60vh] flex flex-col justify-between px-4'>
-                        <div></div>
-                        <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none -mb-8'>3</h2>
-                    </div>
-                    <div>
-                        <h2 className='text-[#1D1D1F] font-semibold text-[20px]'>Aqualert</h2>
-                        <p className='text-[#626262] text-[16px] font-medium'>2024</p>
-                    </div>
-                </div>
-
-                <div className='space-y-4'>
-                    <div className='bg-[#395886] h-[60vh] flex flex-col justify-between px-4'>
-                        <div></div>
-                        <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none -mb-8'>4</h2>
-                    </div>
-                    <div>
-                        <h2 className='text-[#1D1D1F] font-semibold text-[20px]'>JFlix</h2>
-                        <p className='text-[#626262] text-[16px] font-medium'>2025</p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
 

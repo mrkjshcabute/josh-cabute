@@ -37,3 +37,12 @@ h1{
   background: #B1C9EF;
   background: linear-gradient(0deg, rgba(177, 201, 239, 1) 0%, rgba(99, 142, 203, 1) 100%);
 }
+
+.hide-scrollbar {
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
