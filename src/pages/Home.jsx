@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from './components/Header'
 import { TbDownload } from "react-icons/tb";
@@ -26,6 +26,11 @@ const Home = () => {
         3: 'bg-[#638ECB]',
         4: 'bg-[#395886]',
     };
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+    
   return (
     <div className='overflow-x-hidden'>
         <div className='relative bg-hero w-full h-screen flex flex-col justify-between pb-16 overflow-x-hidden'>
@@ -34,10 +39,10 @@ const Home = () => {
             <div className='flex flex-col justify-center items-center text-center'>
                 <h2 className='text-[24px] md:text-[32px] text-[#1D1D1F] font-semibold'>FRONT-END DEVELOPER</h2>
                 <h1 className='text-[80px] md:text-[160px] lg:text-[200px] leading-none mb-4 drop-shadow-xs'>JOSUAH</h1>
-                <p className='text-[20px] md:text-[24px] text-wrap text-[#626262] font-medium mx-4 md:mx-20'>Crafting sleek, responsive, and interactive web interfaces with clean, modern code.</p>
+                <p className='text-[20px] md:text-[24px] text-wrap text-[#626262] font-medium mx-8 md:mx-20'>Crafting sleek, responsive, and interactive web interfaces with clean, modern code.</p>
             </div>
 
-            <div className='flex justify-between items-end mx-12'>
+            <div className='flex justify-between items-end mx-8 md:mx-12'>
                 <button className='flex space-x-2 items-center border-1 border-[#8AAEE0] rounded-xl p-2 px-4 text-[#8AAEE0] hover:bg-[#8AAEE0] hover:text-white focus:bg-[#8AAEE0] focus:text-white'>
                     <p className='font-semibold'>DOWNLOAD CV</p>
                     <TbDownload size={20}/>
@@ -62,7 +67,7 @@ const Home = () => {
 
         <img src={BlueCrop} className='w-full h-20 rotate-180 -mt-10'/>
 
-        <div className='bg-[#D5DEEF] grid grid-cols-1 lg:grid-cols-2 gap-12 justify-center items-center  py-16 pb-32 px-12 md:px-40'>
+        <div className='bg-[#D5DEEF] grid grid-cols-1 lg:grid-cols-2 gap-12 justify-center items-center  py-16 pb-32 px-8 md:px-40'>
             <div className='flex justify-center lg:justify-end w-full'>
                 <div className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
                     <div className='flex justify-between items-center'>
@@ -153,20 +158,20 @@ const Home = () => {
 
         <div className=''>
             <h2
-            className="text-center font-bold text-[72px] md:text-[120px] text-transparent leading-none py-8"
+            className="text-center font-bold text-[64px] md:text-[120px] text-transparent leading-none py-8 mx-8"
             style={{
-                WebkitTextStroke: '4px #395886',
+                WebkitTextStroke: '2px #395886',
             }}
             >
                 FEATURED PROJECTS
             </h2>
 
-            <div className='text-center text-[#626262] text-[20px] md:text-[24px] mb-12 text-wrap mx-4'>
+            <div className='text-center text-[#626262] text-[20px] md:text-[24px] mb-12 text-wrap mx-8'>
                 <p>Clean, responsive, purposeful.</p>
                 <p>Explore the featured projects of the Joshboard.</p>
             </div>
 
-            <div className='grid grid-cols-2 lg:grid-cols-4 mx-12 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 mx-8 md:mx-12 gap-4'>
                 {projectData.slice(0,4).map((project) => (
                     <div key={project.id} className='space-y-4'>
                         <div className={`h-[40vh] md:h-[60vh] relative flex flex-col justify-between px-4 ${bgColors[project.id] || 'bg-[#CCCCCC]'}`}>
@@ -177,7 +182,7 @@ const Home = () => {
                             <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none absolute -bottom-8 right-2'>{project.id}</h2>
                         </div>
                         <div>
-                            <h2 className='text-[#1D1D1F] font-semibold text-[20px]'>{project.title}</h2>
+                            <h2 className='text-[#1D1D1F] font-semibold text-[20px] leading-none'>{project.title}</h2>
                             <p className='text-[#626262] text-[16px] font-medium'>{project.year}</p>
                         </div>
                     </div>

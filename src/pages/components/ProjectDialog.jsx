@@ -7,9 +7,9 @@ const ProjectDialog = ({ project }) => {
         <form method="dialog">
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
         </form>
-        <div className='flex h-[60vh] gap-4'>
+        <div className='grid grid-cols-2 h-[60vh] gap-4'>
           <div className="h-full flex-shrink-0">
-            <img src={project.display} className='h-full object-cover' />
+            <img src={project.display} className='h-full w-full object-cover' />
           </div>
           <div className='flex flex-col gap-4 py-4 pr-4 overflow-y-auto hide-scrollbar'>
             <p className='text-[12px] font-medium'>Project {project.id}</p>

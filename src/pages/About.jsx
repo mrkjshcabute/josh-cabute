@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from './components/Header'
 import JoshPf from "../assets/img/josh-pf.png"
 import JoshMap from "../assets/img/josh-map.png"
@@ -9,6 +9,10 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPrimevue, SiQuasar } from "react-icons/si";
 
 const About = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+    
   return (
     <div className='overflow-x-hidden'>
       <Header />

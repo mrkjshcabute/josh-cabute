@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className='relative'>
       {/* Top bar */}
-      <div className='flex justify-between items-center px-12 pt-4'>
+      <div className='flex justify-between items-center px-8 md:px-12 pt-4'>
         <div className='w-16 h-16 rounded-full bg-gray-200'></div>
 
         <div>

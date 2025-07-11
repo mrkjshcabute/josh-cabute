@@ -16,6 +16,15 @@ import DentalF from '../assets/img/dental.svg'
 import RDCHIMEF from '../assets/img/rdchime.svg'
 import AqualertF from '../assets/img/aqualert.svg'
 import JflixF from '../assets/img/jflix.svg'
+import Vue from '../assets/icons/vue.svg'
+import PrimeVue from '../assets/icons/primevue.svg'
+import FreeDictionary from '../assets/icons/dictionary.svg'
+import Weather from '../assets/icons/weather.svg'
+import MUI from '../assets/icons/mui.svg'
+import Python from '../assets/icons/python.svg'
+import OpenCV from '../assets/icons/opencv.svg'
+import Numpy from '../assets/icons/numpy.svg'
+import Spyder from '../assets/icons/spyder.svg'
 
 export const projectData = [
   {
@@ -37,6 +46,8 @@ export const projectData = [
       "User Authentication: Secure login functionality for clinic staff to access personalized features and data.",
       "Appointment Management: Dentists and staff can view, approve, or manage appointments in real time."
     ],
+    github: "",
+    live: "https://dentalcaresystem.netlify.app/"
   },
   {
     id: 2,
@@ -60,6 +71,8 @@ export const projectData = [
       "User Management: Allows administrators to create, update, or remove user accounts, assign roles, and manage access permissions.",
       "History Logs: Tracks changes and activities for accountability and auditing."
     ],
+    github: "",
+    live: "https://rdchime-inventory.vercel.app/login"
   },
   {
     id: 3,
@@ -106,5 +119,189 @@ export const projectData = [
       "Search: Find movies by title in real time",
       "Watch Trailers: Instantly play trailers for any movie"
     ],
+    github: "https://github.com/mrkjshcabute/jflix",
+    live: "https://jflix-sigma.vercel.app/"
+  },
+  {
+    id: 5,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Portfolio V1',
+    year: '2025',
+    tools: [
+      { "name": "React", "icon": React },
+      { "name": "Vite", "icon": Vite },
+      { "name": "Tailwind CSS", "icon": TW },
+    ],
+    toolNames: ["React", "Vite", "Tailwind"],
+    details: "Portfolio V1",
+    features: [
+      "Portfolio V1",
+      "Portfolio V1",
+      "Portfolio V1",
+      "Portfolio V1",
+      "Portfolio V1"
+    ],
+    github: "",
+    live: "https://rkjshcabute.vercel.app/"
+  },
+  {
+    id: 6,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Joshionary',
+    year: '2025',
+    tools: [
+      { "name": "Vue", "icon": Vue },
+      { "name": "Vite", "icon": Vite },
+      { "name": "Tailwind CSS", "icon": TW },
+      { "name": "PrimeVue", "icon": PrimeVue },
+      { "name": "Free Dictionary API", "icon": FreeDictionary }
+    ],
+    toolNames: ["Vue", "Vite", "Tailwind", "PrimeVue", "Free Dictionary API"],
+    details: "Joshionary is a sleek and functional dictionary web app that lets you explore English words with ease. Whether you're searching for definitions, learning pronunciation, or checking out the word of the day — Joshionary has you covered. Built using Free Dictionary API.",
+    features: [
+      "Search Word: Instantly find definitions, parts of speech, and examples.",
+      "Word of the Day: Discover a new word each day to expand your vocabulary.",
+      "Phonetics: View the correct phonetic transcription of the word.",
+      "Audio Pronunciation: Hear how the word is properly pronounced."
+    ],
+    github: "https://github.com/mrkjshcabute/joshionary",
+    live: "https://joshionary.vercel.app/"
+  },
+  {
+    id: 7,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Josh Weather Experience',
+    year: '2025',
+    tools: [
+      { "name": "React", "icon": React },
+      { "name": "Vite", "icon": Vite },
+      { "name": "Tailwind CSS", "icon": TW },
+      { "name": "OpenWeatherMap API", "icon": Weather }
+    ],
+    toolNames: ["React", "Vite", "Tailwind", "OpenWeatherMap API"],
+    details: "JWX is a modern and minimal weather web app that lets users check real-time weather conditions and forecasts for any city. Designed for simplicity and clarity, JWX gives users the weather information they need at a glance. Built with OpenWeatherMap API.",
+    features: [
+      "Search City: Get current weather data by entering any city name",
+      "Humidity: Displays current humidity levels",
+      "Wind: Shows wind speed",
+      "Precipitation: Displays rainfall data",
+      "Visibility: Provides visibility range in kilometers",
+      "5-Day Forecast: Shows upcoming daily weather overview"
+    ],
+    github: "https://github.com/mrkjshcabute/jwx",
+    live: "https://jwx-swart.vercel.app/"
+  },
+  {
+    id: 8,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Chrono Task',
+    year: '2025',
+    tools: [
+      { "name": "React", "icon": React },
+      { "name": "Vite", "icon": Vite },
+      { "name": "Tailwind CSS", "icon": TW },
+      { "name": "Material UI", "icon": MUI }
+    ],
+    toolNames: ["React", "Vite", "Tailwind", "Material UI"],
+    details: "Chrono-Task is a minimalist and efficient task timer web app. It helps users stay focused and productive by letting them set custom tasks and durations, with an alarm notification when time is up.",
+    features: [
+      "Write Task Name: Input and label your current task",
+      "Set Custom Duration: Define how long the task should take",
+      "Alarm Notification: Get alerted with an alarm when your time is up"
+    ],
+    github: "https://github.com/mrkjshcabute/chrono-task",
+    live: "https://chrono-task-two.vercel.app/"
+  },
+  {
+    id: 9,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Rock Paper Scissors',
+    year: '2025',
+    tools: [
+      { "name": "Vue", "icon": Vue },
+      { "name": "Vite", "icon": Vite },
+      { "name": "Tailwind CSS", "icon": TW },
+      { "name": "PrimeVue", "icon": PrimeVue }
+    ],
+    toolNames: ["Vue", "Vite", "Tailwind", "PrimeVue"],
+    details: "A sleek and fun Rock-Paper-Scissors game built with Vue 3 and PrimeVue. Challenge the computer, track your score, and enjoy a smooth animated experience.",
+    features: [
+      "Instant play with real-time results",
+      "Computer-generated choices",
+      "Score tracking"
+    ],
+    github: "https://github.com/mrkjshcabute/rock-paper-scissors",
+    live: "https://rock-paper-scissors-six-steel.vercel.app/"
+  },
+  {
+    id: 10,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Folklore Blooms',
+    year: '2023',
+    tools: [
+      { "name": "HTML", "icon": HTML },
+      { "name": "CSS", "icon": CSS }
+    ],
+    toolNames: ["HTML", "CSS"],
+    details: "Folklore Blooms is a visually rich landing page that showcases my HTML and CSS skills through thoughtful layout, responsive design, and elegant styling. Inspired by natural elements and soft aesthetic tones, this project is a front-end demonstration of how structure and style come together to create a smooth user experience.",
+    features: [
+      "Clean and semantic HTML structure",
+      "Custom CSS styling with a soft, folklore-inspired theme",
+      "Responsive layout across devices",
+      "Smooth Transitions"
+    ],
+    github: "https://github.com/mrkjshcabute/folklore-blooms",
+    live: "https://folklore-blooms.vercel.app/"
+  },
+  {
+    id: 11,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'MERSUAH Calculator',
+    year: '2022',
+    tools: [
+      { "name": "HTML", "icon": HTML },
+      { "name": "CSS", "icon": CSS },
+      { "name": "JavaScript", "icon": JS }
+    ],
+    toolNames: ["HTML", "CSS", "JavaScript"],
+    details: "MERSUAH Calculator is a simple yet elegant web-based calculator built with pure HTML, CSS, and JavaScript—no frameworks, no libraries. It features a clean interface, smooth interactions, and a built-in Dark Mode toggle for user comfort.",
+    features: [
+      "Basic arithmetic operations: addition, subtraction, multiplication, division",
+      "Responsive and accessible UI",
+      "Dark Mode switch for low-light environments"
+    ],
+    github: "https://github.com/mrkjshcabute/calculator",
+    live: "https://calculator-eight-kohl-53.vercel.app/"
+  },
+  {
+    id: 12,
+    display: JoshPf,
+    featuredPhoto: "",
+    title: 'Face Recognition',
+    year: '2024',
+    tools: [
+      { "name": "Python", "icon": Python },
+      { "name": "OpenCV (cv2)", "icon": OpenCV },
+      { "name": "NumPy", "icon": Numpy },
+      { "name": "Spyder IDE (Anaconda)", "icon": Spyder }
+    ],
+    toolNames: ["Python", "OpenCV", "Numpy", "Spyder"],
+    details: "A face recognition system built with Python that identifies known individuals from a folder of stored images and labels unknown faces. This project was developed and tested using the Spyder IDE.",
+    features: [
+      "Face detection and recognition using OpenCV and face-recognition libraries",
+      "Displays name and confidence score (e.g., 87.5%)",
+      "Marks unrecognized faces as Unknown",
+      "Supports multiple images per person for better accuracy",
+      "Built and tested in Spyder (Anaconda Environment)"
+    ],
+    github: "https://github.com/mrkjshcabute/face-recognition",
+    live: ""
   },
 ];

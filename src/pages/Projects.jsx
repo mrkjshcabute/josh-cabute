@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header'
 import BlueCrop from "../assets/bg/Botton1.png"
 import { Search } from 'lucide-react';
@@ -21,6 +21,10 @@ const Projects = () => {
       return matchSearch && matchTool;
     });
 
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+
   return (
     <div>
       <div className='bg-hero pb-12'>
@@ -28,7 +32,7 @@ const Projects = () => {
         <h2
           className="text-center font-bold text-[72px] md:text-[120px] text-transparent leading-none py-8"
           style={{
-              WebkitTextStroke: '4px #395886',
+              WebkitTextStroke: '2px #395886',
           }}
           >
           PROJECTS
@@ -42,7 +46,7 @@ const Projects = () => {
 
       <img src={BlueCrop} className='w-full h-20 rotate-180 -mt-10'/>
 
-      <div className='bg-[#D5DEEF] p-8 px-16'>
+      <div className='bg-[#D5DEEF] p-8 md:px-16'>
         <div className="relative w-full">
           <input
             placeholder="Search"
@@ -70,7 +74,7 @@ const Projects = () => {
         </div>
         
         <div className='mt-12'>
-          <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
             {filtered.length > 0 ? (
               filtered.map((project) => (
                 <div key={project.id} onClick={()=>document.getElementById(project.id).showModal()} className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
