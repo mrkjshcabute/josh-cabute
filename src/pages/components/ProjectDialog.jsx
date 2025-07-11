@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectDialog = ({ project }) => {
   return (
-    <dialog id={project.id} className="modal backdrop-blur-sm">
+    <dialog id={project.id} className="modal backdrop-blur-sm bg-white">
       <div className="modal-box p-0 h-[60vh] max-w-2xl">
         <form method="dialog">
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
