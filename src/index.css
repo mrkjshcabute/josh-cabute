@@ -3,6 +3,8 @@
 
 body{
   font-family: "Urbanist", system-ui;
+  color: black;
+  background-color: white;
 }
 
 .bg-hero {
