@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Header from './components/Header'
 import { TbDownload } from "react-icons/tb";
 import { SlSocialFacebook } from "react-icons/sl";
@@ -14,8 +15,11 @@ import BlueCrop from "../assets/bg/Botton1.png"
 import WhiteCrop from "../assets/bg/Botton.png"
 import JoshPf from "../assets/img/josh-pf.png"
 import { projectData } from "../data/ProjectData.jsx"
+import ProjectDialog from './components/ProjectDialog.jsx';
 
 const Home = () => {
+    const navigate = useNavigate();
+
     const bgColors = {
         1: 'bg-[#B1C9EF]',
         2: 'bg-[#8AAEE0]',
@@ -166,8 +170,9 @@ const Home = () => {
                 {projectData.slice(0,4).map((project) => (
                     <div key={project.id} className='space-y-4'>
                         <div className={`h-[40vh] md:h-[60vh] relative flex flex-col justify-between px-4 ${bgColors[project.id] || 'bg-[#CCCCCC]'}`}>
-                            <div className='flex justify-center mb-8'>
+                            <div className='flex justify-center mb-8' onClick={() => document.getElementById(project.id).showModal()}>
                                 <img src={project.featuredPhoto} className='w-[40vw] h-[20vh] md:h-[40vh]'/>
+                                <ProjectDialog project={project}/>
                             </div>
                             <h2 className='text-right text-[#F5F5F7] font-extrabold text-[200px] leading-none absolute -bottom-8 right-2'>{project.id}</h2>
                         </div>
@@ -181,7 +186,7 @@ const Home = () => {
         </div>
 
         <div className='flex justify-end my-20'>
-            <button className='bg-[#395886] text-white text-[20px] p-2 px-8 rounded-tl-2xl rounded-bl-2xl'>
+            <button className='bg-[#395886] text-white text-[20px] p-2 px-8 rounded-tl-2xl rounded-bl-2xl' onClick={() => navigate('/projects')} >
                 See More Projects
             </button>
         </div>
