@@ -33,7 +33,7 @@ const Home = () => {
     }, []);
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden scroll-smooth'>
         <div className='relative bg-hero w-full h-screen flex flex-col justify-between pb-16 overflow-x-hidden'>
             <Header />
 

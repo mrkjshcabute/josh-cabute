@@ -25,6 +25,7 @@ import Python from '../assets/icons/python.svg'
 import OpenCV from '../assets/icons/opencv.svg'
 import Numpy from '../assets/icons/numpy.svg'
 import Spyder from '../assets/icons/spyder.svg'
+import Firebase from '../assets/icons/firebase.svg'
 
 export const projectData = [
   {
@@ -81,20 +82,23 @@ export const projectData = [
     title: 'Aqualert',
     year: '2024',
     tools: [
-      { "name": "HTML", "icon": HTML },
-      { "name": "CSS", "icon": CSS },
-      { "name": "JavaScript", "icon": JS },
-      { "name": "Materialize", "icon": Materialize }
+      { "name": "React Native", "icon": React },
+      { "name": "Vite", "icon": Vite },
+      { "name": "Tailwind", "icon": TW },
+      { "name": "Firebase", "icon": Firebase }
     ],
-    toolNames: ["React-Native", "Vite", "Tailwind", "Firebase"],
-    details: "Aqualert",
+    toolNames: ["React Native", "Vite", "Tailwind", "Firebase"],
+    details: "Aqualert is a mobile application developed as part of our thesis project. Its name combines “Aqua” and “Alert,” reflecting its purpose of helping users monitor water usage and detect potential leaks in real time. I was responsible for implementing the front-end based on provided designs and solely authored the full project documentation.",
     features: [
-      "Aqualert",
-      "Aqualert",
-      "Aqualert",
-      "Aqualert",
-      "Aqualert"
+      "Water Consumption Graphs: Displays daily, weekly, and monthly usage (overall and per room).",
+      "Real-Time Flow Rate Monitoring: Shows current water flow data.",
+      "Leak Detection: Identifies possible leaks in specific rooms.",
+      "User Notifications: Sends alerts when a leak is detected.",
+      "Automatic Valve Control: Shuts off valves when leakage is found.",
+      "Manual Valve Control: Users can remotely turn valves on or off through the app."
     ],
+    github: "",
+    live: ""
   },
   {
     id: 4,
@@ -134,16 +138,15 @@ export const projectData = [
       { "name": "Tailwind CSS", "icon": TW },
     ],
     toolNames: ["React", "Vite", "Tailwind"],
-    details: "Portfolio V1",
+    details: "Portfolio V1 is my first personal web portfolio, designed to showcase selected works, skills, and background as a front-end developer.",
     features: [
-      "Portfolio V1",
-      "Portfolio V1",
-      "Portfolio V1",
-      "Portfolio V1",
-      "Portfolio V1"
+      "Home: Landing section with an introduction and quick links.",
+      "Featured Projects: Highlighted personal and academic projects.",
+      "All Projects: A complete collection of my work.",
+      "About: A section detailing my background, skills, and contact information."
     ],
     github: "",
-    live: "https://rkjshcabute.vercel.app/"
+    live: ""
   },
   {
     id: 6,

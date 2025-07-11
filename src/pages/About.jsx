@@ -15,7 +15,7 @@ const About = () => {
     }, []);
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden scroll-smooth'>
       <Header />
 
       <div className='bg-about text-center text-[#B1C9EF] text-[100px] md:text-[140px] lg:text-[200px] font-semibold'>

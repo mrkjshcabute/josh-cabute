@@ -9,7 +9,7 @@ import ProjectDialog from './components/ProjectDialog.jsx';
 import Footer from './components/Footer.jsx';
 
 const Projects = () => { 
-    const toolOptions = ['All', 'HTML', 'React', 'Vue'];
+    const toolOptions = ['All', 'HTML', 'React', 'Vue', 'Vite', 'Python'];
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedTool, setSelectedTool] = useState('All');
 
@@ -27,7 +27,7 @@ const Projects = () => {
     }, []);
 
   return (
-    <div>
+    <div className='scroll-smooth overflow-x-hidden'>
       <div className='bg-hero pb-12'>
         <Header />
         <h2
@@ -51,19 +51,19 @@ const Projects = () => {
         <div className="relative w-full">
           <input
             placeholder="Search"
-            className="w-full py-4 px-4 outline-[#b6ccd7] hover:outline-[#b6ccd7] bg-white rounded-xl focus:outline-2 focus:outline-[#b6ccd7]"
+            className="w-full py-4 px-4 outline-[#b6ccd7] hover:outline-[#395886] bg-white rounded-xl focus:outline-1 focus:outline-[#395886]"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <Search size={40} className="absolute right-3 top-1/2 -translate-y-1/2 text-[#626262] rounded-full p-2 pointer-events-none" />
         </div>
 
-        <div className='flex flex-wrap gap-2 mt-4'>
+        <div className='flex flex-nowrap overflow-x-auto hide-scrollbar gap-2 mt-4'>
           {toolOptions.map((tool) => (
             <button
               key={tool}
               onClick={() => setSelectedTool(tool)}
-              className={`px-3 py-1 rounded-full text-sm font-medium ${
+              className={`px-4 py-1 rounded-full text-sm font-medium ${
                 selectedTool === tool
                   ? 'bg-[#395886] text-white'
                   : 'bg-[#F5F5F7] text-[#395886]'
@@ -82,7 +82,7 @@ const Projects = () => {
                   <div className='flex justify-between items-center'>
                     <div className='flex items-center space-x-2'>
                       <img src={JoshPf} className='w-8 h-8 rounded-full object-cover' />
-                      <p className='text-[12px] font-semibold'>Project {project.id}</p>
+                      <p className='text-[16px] font-semibold'>Project {project.id}</p>
                     </div>
                     <Ellipsis />
                   </div>

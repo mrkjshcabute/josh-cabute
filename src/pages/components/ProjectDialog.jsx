@@ -14,7 +14,7 @@ const ProjectDialog = ({ project }) => {
           <div className="h-[30vh] sm:h-full w-full sm:w-1/2 flex-shrink-0">
             <img src={project.display} className='h-full w-full object-cover' />
           </div>
-          <div className='flex flex-col h-full gap-4 py-4 pr-4 overflow-y-auto hide-scrollbar mx-4 sm:mx-0'>
+          <div className='flex flex-col h-full gap-4 py-4 pr-4 overflow-y-auto hide-scrollbar mx-4 sm:mx-0 scroll-smooth'>
             <p className='text-[16px] font-medium'>Project {project.id}</p>
             <h3 className="font-bold text-[24px] text-[#395886] leading-none">{project.title}</h3>
 
