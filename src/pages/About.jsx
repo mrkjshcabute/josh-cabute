@@ -12,7 +12,7 @@ const About = () => {
     useEffect(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, []);
-    
+
   return (
     <div className='overflow-x-hidden'>
       <Header />
@@ -58,7 +58,7 @@ const About = () => {
         </ul>
 
         <div className='mt-20 mx-8 md:absolute md:top-0 md:left-[40%]'>
-          <div className="text-[18px] w-full md:w-[60vw] xl:w-200">
+          <div className="text-[18px] w-full md:w-[60vw] lg:w-180 xl:w-200">
             <h4 className='text-[#395886] font-bold text-[20px]'>Technology Stacks</h4>
             <div className='flex flex-wrap gap-4 bg-[#F0F3FA] justify-center md:justify-start p-4 md:px-8 shadow-xl border-1 border-black rounded-2xl md:mr-20 mt-4'>
               <div className='flex items-center gap-2 bg-white p-1 px-4 rounded-full shadow-md'>
@@ -116,7 +116,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="text-[18px] mt-8 w-full md:w-[60vw] xl:w-200">
+          <div className="text-[18px] mt-8 w-full md:w-[60vw] lg:w-180 xl:w-200">
             <h4 className='text-[#395886] font-bold text-[20px]'>Interesting Hobbies</h4>
             <div className='flex flex-wrap gap-4 bg-[#F0F3FA] p-4 px-8 shadow-xl border-1 border-black rounded-2xl md:mr-20 mt-4 md:h-40 items-center'>
               <p className='text-center'>Code by day. Stories, soundtracks, and series by night. My escape? Wattpad chapters, cinematic worlds, and music that feels like a second heartbeats.</p>
