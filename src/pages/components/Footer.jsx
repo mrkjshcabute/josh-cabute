@@ -14,23 +14,23 @@ const Footer = () => {
 
       <div className='flex flex-col gap-2'>
         <div className='flex gap-2'>
-            <div className='border-1 p-2 rounded-full w-fit'>
-                <a href='' target='_blank'>
+            <div className='border-1 p-2 rounded-full w-fit transition-all duration-300 hover:bg-[#F5F5F7] hover:text-[#395886] hover:border-[#F5F5F7] active:bg-[#F5F5F7] active:text-[#395886] active:border-[#F5F5F7]'>
+                <a href='https://www.facebook.com/mrkjsh.cabute' target='_blank'>
                     <FaFacebookF className='text-[16px]'/>
                 </a>
             </div>
-            <div className='border-1 p-2 rounded-full w-fit'>
-                <a href='' target='_blank'>
+            <div className='border-1 p-2 rounded-full w-fit transition-all duration-300 hover:bg-[#F5F5F7] hover:text-[#395886] hover:border-[#F5F5F7] active:bg-[#F5F5F7] active:text-[#395886] active:border-[#F5F5F7]'>
+                <a href='https://www.instagram.com/iamjoshjc/' target='_blank'>
                     <FaInstagram className='text-[16px]'/>
                 </a>
             </div>
-            <div className='border-1 p-2 rounded-full w-fit'>
-                <a href='' target='_blank'>
+            <div className='border-1 p-2 rounded-full w-fit transition-all duration-300 hover:bg-[#F5F5F7] hover:text-[#395886] hover:border-[#F5F5F7] active:bg-[#F5F5F7] active:text-[#395886] active:border-[#F5F5F7]'>
+                <a href='https://www.linkedin.com/in/mark-josuah-cabute-2502682a0/' target='_blank'>
                     <FaLinkedinIn className='text-[16px]'/>
                 </a>
             </div>
-            <div className='border-1 p-2 rounded-full w-fit'>
-                <a href='' target='_blank'>
+            <div className='border-1 p-2 rounded-full w-fit transition-all duration-300 hover:bg-[#F5F5F7] hover:text-[#395886] hover:border-[#F5F5F7] active:bg-[#F5F5F7] active:text-[#395886] active:border-[#F5F5F7]'>
+                <a href='https://github.com/mrkjshcabute' target='_blank'>
                     <TbBrandGithubFilled className='text-[16px]'/>
                 </a>
             </div>

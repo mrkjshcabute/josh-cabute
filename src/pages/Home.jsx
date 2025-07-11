@@ -44,21 +44,21 @@ const Home = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-between items-center mx-8 md:mx-12 gap-4'>
-                <button className='flex space-x-2 items-center border-1 border-[#8AAEE0] rounded-xl p-2 px-4 text-[#8AAEE0] hover:bg-[#8AAEE0] hover:text-white focus:bg-[#8AAEE0] focus:text-white w-fit justify-center'>
+                <button className='flex space-x-2 items-center border-1 border-[#8AAEE0] rounded-xl p-2 px-4 text-[#8AAEE0] hover:bg-[#8AAEE0] hover:text-white focus:bg-[#8AAEE0] focus:text-white w-fit justify-center transition-all duration-300'>
                     <p className='font-semibold'>DOWNLOAD CV</p>
                     <TbDownload size={20}/>
                 </button>
 
                 <div className='text-[#626262] font-semibold flex gap-4 md:gap-8'>
-                    <a href='#' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[1.5%] lg:bottom-[14%] hover:text-[#395886] focus:text-[#395886]'>
+                    <a href='https://www.facebook.com/mrkjsh.cabute' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[1.5%] lg:bottom-[14%] hover:text-[#395886] active:text-[#395886] transition-all duration-300'>
                         <SlSocialFacebook className='leading-none text-[18px]'/>
                         <p className='leading-none'>FACEBOOK</p>
                     </a>
-                    <a href='#' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[1.8%] lg:bottom-[44%] hover:text-[#395886] focus:text-[#395886]'>
+                    <a href='https://www.linkedin.com/in/mark-josuah-cabute-2502682a0/' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[1.8%] lg:bottom-[44%] hover:text-[#395886] active:text-[#395886] transition-all duration-300'>
                         <LuLinkedin className='leading-none text-[18px]'/>
                         <p className='leading-none'>LINKEDIN</p>
                     </a>
-                    <a href='#' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[2%] lg:bottom-[70%] hover:text-[#395886] focus:text-[#395886]'>
+                    <a href='https://github.com/mrkjshcabute' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[2%] lg:bottom-[70%] hover:text-[#395886] active:text-[#395886] transition-all duration-300'>
                         <FiGithub className='leading-none text-[18px]'/>
                         <p className='leading-none'>GITHUB</p>
                     </a>
