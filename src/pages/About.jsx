@@ -7,6 +7,7 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { DiJavascript, DiMaterializecss } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPrimevue, SiQuasar } from "react-icons/si";
+import Footer from './components/Footer';
 
 const About = () => {
     useEffect(() => {
@@ -135,10 +136,11 @@ const About = () => {
         ></iframe>
       </div>
 
-      <div className='flex justify-center mb-20'>
+      <div className='flex justify-center mb-40'>
         <img src={JoshMap} className='w-[80%] md:w-[60%] h-40 sm:h-60 md:h-90 object-cover object-center rounded-xl -mt-24 md:-mt-50 z-24' />
       </div>
 
+      <Footer />
     </div>
   )
 }

@@ -16,6 +16,7 @@ import WhiteCrop from "../assets/bg/Botton.png"
 import JoshPf from "../assets/img/josh-pf.png"
 import { projectData } from "../data/ProjectData.jsx"
 import ProjectDialog from './components/ProjectDialog.jsx';
+import Footer from './components/Footer.jsx';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -179,7 +180,7 @@ const Home = () => {
                                 <img src={project.featuredPhoto} className='w-[40vw] h-[24vh] md:h-[40vh]'/>
                                 <ProjectDialog project={project}/>
                             </div>
-                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[120px] md:text-[200px] leading-none absolute -bottom-5 md:-bottom-8 right-2'>{project.id}</h2>
+                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[120px] md:text-[200px] leading-none absolute -bottom-[7.15%] md:-bottom-[7.5%] xl:-bottom-[7%] right-2'>{project.id}</h2>
                         </div>
                         <div>
                             <h2 className='text-[#1D1D1F] font-semibold text-[20px] leading-none'>{project.title}</h2>
@@ -195,6 +196,8 @@ const Home = () => {
                 See More Projects
             </button>
         </div>
+
+        <Footer />
 
     </div>
   )

@@ -6,6 +6,7 @@ import { Ellipsis, Heart, MessageCircle, Send, Bookmark } from 'lucide-react';
 import JoshPf from "../assets/img/josh-pf.png"
 import { projectData } from "../data/ProjectData.jsx"
 import ProjectDialog from './components/ProjectDialog.jsx';
+import Footer from './components/Footer.jsx';
 
 const Projects = () => { 
     const toolOptions = ['All', 'HTML', 'React', 'Vue'];
@@ -74,7 +75,7 @@ const Projects = () => {
         </div>
         
         <div className='mt-12'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-20'>
             {filtered.length > 0 ? (
               filtered.map((project) => (
                 <div key={project.id} onClick={()=>document.getElementById(project.id).showModal()} className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
@@ -110,6 +111,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }

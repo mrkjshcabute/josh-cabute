@@ -23,6 +23,10 @@ body{
   z-index: -1;
 }
 
+.Red-Hat{
+  font-family: "Red Hat Display", system-ui;
+}
+
 h1{
   font-family: "Bagel Fat One", system-ui;
   
