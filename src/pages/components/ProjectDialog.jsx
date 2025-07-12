@@ -12,7 +12,7 @@ const ProjectDialog = ({ project }) => {
         </form>
         <div className='flex flex-col sm:flex-row h-[60vh] gap-4 bg-[#F5F5F7]'>
           <div className="h-[30vh] sm:h-full w-full sm:w-1/2 flex-shrink-0">
-            <img src={project.display} className='h-full w-full object-cover' />
+            <img src={project.display} className='h-full w-full object-cover object-center' />
           </div>
           <div className='flex flex-col h-full gap-4 py-4 pr-4 overflow-y-auto hide-scrollbar mx-4 sm:mx-0 scroll-smooth'>
             <p className='text-[16px] font-medium'>Project {project.id}</p>

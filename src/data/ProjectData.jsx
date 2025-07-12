@@ -30,7 +30,7 @@ import Firebase from '../assets/icons/firebase.svg'
 export const projectData = [
   {
     id: 1,
-    display: JoshPf,
+    display: '/display/dental.svg',
     featuredPhoto: DentalF,
     title: 'Dental Care System',
     year: '2023',
@@ -52,7 +52,7 @@ export const projectData = [
   },
   {
     id: 2,
-    display: JoshPf,
+    display: '/display/rdchime.svg',
     featuredPhoto: RDCHIMEF,
     title: 'RDCHIME Inventory System',
     year: '2024',
@@ -77,7 +77,7 @@ export const projectData = [
   },
   {
     id: 3,
-    display: JoshPf,
+    display: '/display/aqualert.svg',
     featuredPhoto: AqualertF,
     title: 'Aqualert',
     year: '2024',
@@ -102,7 +102,7 @@ export const projectData = [
   },
   {
     id: 4,
-    display: JoshPf,
+    display: '/display/jflix.svg',
     featuredPhoto: JflixF,
     title: 'Jflix',
     year: '2025',
@@ -128,7 +128,7 @@ export const projectData = [
   },
   {
     id: 5,
-    display: JoshPf,
+    display: '/display/portfolio.svg',
     featuredPhoto: "",
     title: 'Portfolio V1',
     year: '2025',
@@ -150,7 +150,7 @@ export const projectData = [
   },
   {
     id: 6,
-    display: JoshPf,
+    display: '/display/joshionary.svg',
     featuredPhoto: "",
     title: 'Joshionary',
     year: '2025',
@@ -174,7 +174,7 @@ export const projectData = [
   },
   {
     id: 7,
-    display: JoshPf,
+    display: '/display/jwx.svg',
     featuredPhoto: "",
     title: 'Josh Weather Experience',
     year: '2025',
@@ -199,7 +199,7 @@ export const projectData = [
   },
   {
     id: 8,
-    display: JoshPf,
+    display: '/display/chrono-task.svg',
     featuredPhoto: "",
     title: 'Chrono Task',
     year: '2025',
@@ -221,7 +221,7 @@ export const projectData = [
   },
   {
     id: 9,
-    display: JoshPf,
+    display: '/display/rps.svg',
     featuredPhoto: "",
     title: 'Rock Paper Scissors',
     year: '2025',
@@ -243,7 +243,7 @@ export const projectData = [
   },
   {
     id: 10,
-    display: JoshPf,
+    display: '/display/fb.svg',
     featuredPhoto: "",
     title: 'Folklore Blooms',
     year: '2023',
@@ -264,7 +264,7 @@ export const projectData = [
   },
   {
     id: 11,
-    display: JoshPf,
+    display: '/display/calculator.svg',
     featuredPhoto: "",
     title: 'MERSUAH Calculator',
     year: '2022',
@@ -285,7 +285,7 @@ export const projectData = [
   },
   {
     id: 12,
-    display: JoshPf,
+    display: '/display/fr.svg',
     featuredPhoto: "",
     title: 'Face Recognition',
     year: '2024',

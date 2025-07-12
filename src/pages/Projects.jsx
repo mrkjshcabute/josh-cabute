@@ -86,7 +86,7 @@ const Projects = () => {
                     </div>
                     <Ellipsis />
                   </div>
-                  <img src={JoshPf} className='w-full h-68 object-cover' />
+                  <img src={project.display} className='w-full h-68 object-cover object-center' />
 
                   <div>
                     <h4 className='text-[20px] font-semibold leading-none'>{project.title}</h4>
