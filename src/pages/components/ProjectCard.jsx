@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
     <div
       key={project.id}
       onClick={() => document.getElementById(project.id).showModal()}
-      className='bg-white rounded-lg p-4 space-y-4 shadow-lg scroll-smooth'
+      className='bg-white rounded-lg p-4 space-y-4 shadow-lg cursor-pointer'
     >
       <div className='flex justify-between items-center'>
         <div className='flex items-center space-x-2'>

@@ -49,7 +49,7 @@ const Home = () => {
                     <TbDownload size={20}/>
                 </button>
 
-                <div className='text-[#626262] font-semibold flex gap-4 md:gap-8'>
+                <div className='text-[#626262] font-semibold flex gap-6 md:gap-8'>
                     <a href='https://www.facebook.com/mrkjsh.cabute' target='_blank' className='flex items-center lg:transform lg:-rotate-90 gap-2 lg:absolute lg:right-[1.5%] lg:bottom-[14%] hover:text-[#395886] active:text-[#395886] transition-all duration-300'>
                         <SlSocialFacebook className='leading-none text-[18px]'/>
                         <p className='leading-none'>FACEBOOK</p>

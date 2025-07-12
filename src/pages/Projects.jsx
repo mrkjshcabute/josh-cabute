@@ -71,7 +71,7 @@ const Projects = () => {
             <button
               key={tool}
               onClick={() => setSelectedTool(tool)}
-              className={`px-4 py-1 rounded-full text-sm font-medium ${
+              className={`px-4 py-1 rounded-full text-sm font-medium cursor-pointer transition-all duration-300 ${
                 selectedTool === tool
                   ? 'bg-[#395886] text-white'
                   : 'bg-[#F5F5F7] text-[#395886]'
@@ -83,7 +83,7 @@ const Projects = () => {
         </div>
         
         <div className='mt-12'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-20'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pb-20'>
             {filtered.length > 0 ? (
               filtered.map((project) => (
                 <ProjectCard key={project.id} project={project} />
