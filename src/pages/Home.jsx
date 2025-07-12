@@ -93,10 +93,10 @@ const Home = () => {
             <div className='flex flex-col space-y-4 md:space-y-8'>
                 <div>
                     <h4 className='text-[24px] font-medium'>I'm Josuah,</h4>
-                    <h3 className='text-[32px] font-bold'>FRONT-END DEVELOPER</h3>
+                    <h3 className='text-[32px] font-bold leading-none'>FRONT-END DEVELOPER</h3>
                 </div>
 
-                <p className='text-[16px] text-[#626262] text-medium'>I build websites where design and code work together. Clean layouts, smooth interactions, and a Joshified touch bring every idea to life.</p>
+                <p className='text-[20px] text-[#626262] text-medium'>I build websites where design and code work together. Clean layouts, smooth interactions, and a Joshified touch bring every idea to life.</p>
 
                 <div className='flex flex-wrap gap-2'>
                     <div className='flex items-center gap-2 bg-white p-1 px-2 rounded-lg shadow-md'>
@@ -175,12 +175,12 @@ const Home = () => {
             <div className='grid grid-cols-2 lg:grid-cols-4 mx-8 md:mx-12 gap-4'>
                 {projectData.slice(0,4).map((project) => (
                     <div key={project.id} className='space-y-4'>
-                        <div className={`h-[40vh] md:h-[60vh] relative flex flex-col justify-between px-4 ${bgColors[project.id] || 'bg-[#CCCCCC]'}`}>
+                        <div className={`h-[36vh] md:h-[60vh] relative flex flex-col justify-between px-4 ${bgColors[project.id] || 'bg-[#CCCCCC]'}`}>
                             <div className='flex justify-center mb-8' onClick={() => document.getElementById(project.id).showModal()}>
-                                <img src={project.featuredPhoto} className='w-[40vw] h-[24vh] md:h-[40vh]'/>
+                                <img src={project.featuredPhoto} className='w-[40vw] h-[24vh] md:h-[40vh] absolute top-0 right-0'/>
                                 <ProjectDialog project={project}/>
                             </div>
-                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[120px] md:text-[200px] leading-none absolute -bottom-[7%] md:-bottom-[7.5%] xl:-bottom-[7%] right-2'>{project.id}</h2>
+                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[120px] md:text-[200px] leading-none h-[100px] md:h-[170px] absolute bottom-0 right-2'>{project.id}</h2>
                         </div>
                         <div>
                             <h2 className='text-[#1D1D1F] font-semibold text-[20px] leading-none'>{project.title}</h2>

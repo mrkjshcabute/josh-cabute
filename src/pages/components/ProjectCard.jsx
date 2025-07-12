@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IoPersonSharp } from 'react-icons/io5';
 import { Ellipsis, Heart, MessageCircle, Send, Bookmark } from 'lucide-react';
-import JoshPf from '../../assets/img/josh-pf.png'; // Update this path
+import JoshPf from '../../assets/img/josh-pf.png';
 import ProjectDialog from './ProjectDialog';
 
 export default function ProjectCard({ project }) {
@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
     <div
       key={project.id}
       onClick={() => document.getElementById(project.id).showModal()}
-      className='bg-white rounded-lg p-4 space-y-4 shadow-lg'
+      className='bg-white rounded-lg p-4 space-y-4 shadow-lg scroll-smooth'
     >
       <div className='flex justify-between items-center'>
         <div className='flex items-center space-x-2'>

@@ -24,10 +24,10 @@ const About = () => {
 
       <div className='flex flex-col items-center justify-center'>
         <img src={JoshPf} className='w-48 h-48 rounded-full object-cover -mt-24 z-20'/>
-        <div className='mt-4 text-center'>
+        <div className='mt-4 text-center flex flex-col gap-2'>
           <div className='flex flex-col md:flex-row gap-2'>
-            <h3 className='font-bold text-[24px]'>Mark Josuah J. Cabute</h3>
-            <h4 className='font-normal text-[24px]'>/jos-wa/</h4>
+            <h3 className='font-bold text-[24px] leading-none'>Mark Josuah J. Cabute</h3>
+            <h4 className='font-normal text-[24px] leading-none'>/jos-wa/</h4>
           </div>
           <p className='text-[#626262] text-[16px]'>Front-End Developer</p>
         </div>
