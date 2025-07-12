@@ -27,10 +27,23 @@ import Numpy from '../assets/icons/numpy.svg'
 import Spyder from '../assets/icons/spyder.svg'
 import Firebase from '../assets/icons/firebase.svg'
 
+import DentalD from '../assets/display/dental.svg'
+import RDCHIMED from '../assets/display/rdchime.svg'
+import AqualertD from '../assets/display/aqualert.svg'
+import JflixD from '../assets/display/jflix.svg'
+import PortfolioD from '../assets/display/portfolio.svg'
+import JoshionaryD from '../assets/display/joshionary.svg'
+import JWXD from '../assets/display/jwx.svg'
+import ChronoTaskD from '../assets/display/chrono-task.svg'
+import RPSD from '../assets/display/rps.svg'
+import FBD from '../assets/display/fb.svg'
+import CalculatorD from '../assets/display/calculator.svg'
+import FRD from '../assets/display/fr.svg'
+
 export const projectData = [
   {
     id: 1,
-    display: '/display/dental.svg',
+    display: DentalD,
     featuredPhoto: DentalF,
     title: 'Dental Care System',
     year: '2023',
@@ -52,7 +65,7 @@ export const projectData = [
   },
   {
     id: 2,
-    display: '/display/rdchime.svg',
+    display: RDCHIMED,
     featuredPhoto: RDCHIMEF,
     title: 'RDCHIME Inventory System',
     year: '2024',
@@ -77,7 +90,7 @@ export const projectData = [
   },
   {
     id: 3,
-    display: '/display/aqualert.svg',
+    display: AqualertD,
     featuredPhoto: AqualertF,
     title: 'Aqualert',
     year: '2024',
@@ -102,7 +115,7 @@ export const projectData = [
   },
   {
     id: 4,
-    display: '/display/jflix.svg',
+    display: JflixD,
     featuredPhoto: JflixF,
     title: 'Jflix',
     year: '2025',
@@ -128,7 +141,7 @@ export const projectData = [
   },
   {
     id: 5,
-    display: '/display/portfolio.svg',
+    display: PortfolioD,
     featuredPhoto: "",
     title: 'Portfolio V1',
     year: '2025',
@@ -150,7 +163,7 @@ export const projectData = [
   },
   {
     id: 6,
-    display: '/display/joshionary.svg',
+    display: JoshionaryD,
     featuredPhoto: "",
     title: 'Joshionary',
     year: '2025',
@@ -174,7 +187,7 @@ export const projectData = [
   },
   {
     id: 7,
-    display: '/display/jwx.svg',
+    display: JWXD,
     featuredPhoto: "",
     title: 'Josh Weather Experience',
     year: '2025',
@@ -199,7 +212,7 @@ export const projectData = [
   },
   {
     id: 8,
-    display: '/display/chrono-task.svg',
+    display: ChronoTaskD,
     featuredPhoto: "",
     title: 'Chrono Task',
     year: '2025',
@@ -221,7 +234,7 @@ export const projectData = [
   },
   {
     id: 9,
-    display: '/display/rps.svg',
+    display: RPSD,
     featuredPhoto: "",
     title: 'Rock Paper Scissors',
     year: '2025',
@@ -243,7 +256,7 @@ export const projectData = [
   },
   {
     id: 10,
-    display: '/display/fb.svg',
+    display: FBD,
     featuredPhoto: "",
     title: 'Folklore Blooms',
     year: '2023',
@@ -264,7 +277,7 @@ export const projectData = [
   },
   {
     id: 11,
-    display: '/display/calculator.svg',
+    display: CalculatorD,
     featuredPhoto: "",
     title: 'MERSUAH Calculator',
     year: '2022',
@@ -285,7 +298,7 @@ export const projectData = [
   },
   {
     id: 12,
-    display: '/display/fr.svg',
+    display: FRD,
     featuredPhoto: "",
     title: 'Face Recognition',
     year: '2024',

@@ -180,7 +180,7 @@ const Home = () => {
                                 <img src={project.featuredPhoto} className='w-[40vw] h-[24vh] md:h-[40vh] absolute top-0 right-0'/>
                                 <ProjectDialog project={project}/>
                             </div>
-                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[120px] md:text-[200px] leading-none h-[100px] md:h-[170px] absolute bottom-0 right-2'>{project.id}</h2>
+                            <h2 className='text-right text-[#F5F5F7] font-extrabold text-[120px] md:text-[200px] leading-none h-[101px] md:h-[170px] absolute bottom-0 right-2'>{project.id}</h2>
                         </div>
                         <div>
                             <h2 className='text-[#1D1D1F] font-semibold text-[20px] leading-none'>{project.title}</h2>
