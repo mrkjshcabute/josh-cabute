@@ -7,11 +7,19 @@ import JoshPf from "../assets/img/josh-pf.png"
 import { projectData } from "../data/ProjectData.jsx"
 import ProjectDialog from './components/ProjectDialog.jsx';
 import Footer from './components/Footer.jsx';
+import { IoPersonSharp } from "react-icons/io5";
+import ProjectCard from './components/ProjectCard.jsx';
 
 const Projects = () => { 
     const toolOptions = ['All', 'HTML', 'React', 'Vue', 'Vite', 'Python'];
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedTool, setSelectedTool] = useState('All');
+    const [showLinks, setShowLinks] = useState(false);
+
+    const toggleLinks = (e) => {
+      e.stopPropagation();
+      setShowLinks((prev) => !prev);
+    };
 
     const filtered = projectData.filter((proj) => {
       const matchSearch = proj.title.toLowerCase().includes(searchQuery.toLowerCase());
@@ -78,32 +86,7 @@ const Projects = () => {
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-20'>
             {filtered.length > 0 ? (
               filtered.map((project) => (
-                <div key={project.id} onClick={()=>document.getElementById(project.id).showModal()} className=' bg-white rounded-lg p-4 space-y-4 shadow-lg'>
-                  <div className='flex justify-between items-center'>
-                    <div className='flex items-center space-x-2'>
-                      <img src={JoshPf} className='w-8 h-8 rounded-full object-cover' />
-                      <p className='text-[16px] font-semibold'>Project {project.id}</p>
-                    </div>
-                    <Ellipsis />
-                  </div>
-                  <img src={project.display} className='w-full h-68 object-cover object-center' />
-
-                  <div>
-                    <h4 className='text-[20px] font-semibold leading-none'>{project.title}</h4>
-                    <p className='text-[16px] text-[#626262] font-medium'>{project.year}</p>
-                  </div>
-                  
-                  <div className='flex justify-between'>
-                    <div className='flex space-x-2'>
-                      <Heart fill='red' color='red'/>
-                      <MessageCircle />
-                      <Send />
-                    </div>
-                    <Bookmark />
-                  </div>
-
-                  <ProjectDialog project={project}/>
-                </div>
+                <ProjectCard key={project.id} project={project} />
               ))
             ) : (
               <p className='text-gray-500'>No projects found.</p>

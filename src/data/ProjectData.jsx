@@ -146,7 +146,7 @@ export const projectData = [
       "About: A section detailing my background, skills, and contact information."
     ],
     github: "",
-    live: ""
+    live: "https://mrkjshcabute.vercel.app/"
   },
   {
     id: 6,
